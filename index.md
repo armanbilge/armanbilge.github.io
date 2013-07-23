@@ -3,5 +3,4 @@ title: Arman Bilge
 layout: default
 ---
 
-Welcome!
-Nothing to say for now. Maybe I'll add a photo.
+![pigeons](http://media.armanbilge.com/pigeons.jpg)
