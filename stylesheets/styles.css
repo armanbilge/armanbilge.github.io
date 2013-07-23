@@ -96,7 +96,7 @@ img {
 }
 
 header {
-  width:135px;
+  width:270px;
   float:left;
   position:fixed;
 }
@@ -197,7 +197,7 @@ footer {
   }
   
   header {
-    padding-right:320px;
+    padding-right:80px;
   }
   
   section {
