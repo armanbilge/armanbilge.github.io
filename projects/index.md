@@ -4,6 +4,7 @@ layout: default
 
 ---
 
-## Projects
+# Projects
 
-### [LHS Dance Room](danceroom/)
+## [LHS Dance Room](danceroom/)
+In which I assemble some rather large images.
