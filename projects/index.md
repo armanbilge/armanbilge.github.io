@@ -1,8 +1,9 @@
 ---
 title: Projects
 layout: default
+
 ---
 
 # Projects
 
-* [LHS Dance Room](danceroom/)
+## [LHS Dance Room](danceroom/)
