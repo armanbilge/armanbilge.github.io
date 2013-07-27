@@ -4,6 +4,6 @@ layout: default
 
 ---
 
-# Projects
+## Projects
 
-## [LHS Dance Room](danceroom/)
+### [LHS Dance Room](danceroom/)
