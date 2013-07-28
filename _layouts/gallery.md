@@ -1,9 +1,8 @@
 ---
-title: {{ title }}
 layout: default
 
 ---
 
-# {{ title  }}
+# {{ page.title  }}
 
 {{ content }}
