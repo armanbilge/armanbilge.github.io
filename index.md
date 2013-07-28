@@ -1,6 +1,7 @@
 ---
 title: Arman Bilge
 layout: default
+
 ---
 
-![pigeons](http://media.armanbilge.com/pigeons.jpg)
+![silhouette](http://media.armanbilge.com/silhouette.jpg)
