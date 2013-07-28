@@ -4,4 +4,4 @@ layout: default
 
 ---
 
--> ![dandelion](http://media.armanbilge.com/dandelion.jpg) <-
+<p align="center"><img alt="dandelion" src="http://media.armanbilge.com/dandelion.jpg"/></p>
