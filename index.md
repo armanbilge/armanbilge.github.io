@@ -4,4 +4,4 @@ layout: default
 
 ---
 
-![silhouette](http://media.armanbilge.com/silhouette.jpg)
+![dandelion](http://media.armanbilge.com/dandelion.jpg)
