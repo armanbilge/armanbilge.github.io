@@ -1,6 +1,7 @@
 ---
 title: test gallery
 layout: gallery
+rubbish: gobbledygook
 
 ---
 
