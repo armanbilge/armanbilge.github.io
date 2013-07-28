@@ -4,4 +4,4 @@ layout: default
 
 ---
 
-<img align="right" src="http://media.armanbilge.com/dandelion.jpg" alt="dandelion"/>
+<img align="center" src="http://media.armanbilge.com/dandelion.jpg" alt="dandelion"/>
