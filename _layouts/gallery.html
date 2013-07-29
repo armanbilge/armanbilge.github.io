@@ -12,7 +12,7 @@ custom-head: |
 {{ content }}
 
 {% assign multiple-two = false %}
-{% assign multiple-four = true %}
+{% assign multiple-four = false %}
 {% for photo in page.photos %}
 <a data-lightbox="gallery" href="{{ page.base-url }}{{ photo.name }}" title="{{ photo.caption }}"><img alt='{{ photo.name }}' title='{{ photo.caption }}' src='{{ page.base-url }}thumbs/{{ photo.name }}'/></a>
 
@@ -20,20 +20,12 @@ custom-head: |
     {% assign multiple-two = false %}
     {% if multiple-four %}
         {% assign multiple-four = false %}
-        just to prove this works<br/>
+        <br/>
     {% else %}
         {% assign multiple-four = true %}
-        true false
     {% endif %}
 {% else %}
     {% assign multiple-two = true %}
-    {% if multiple-four %}
-        {% assign multiple-four = false %}
-        false true
-    {% else %}
-        {% assign multiple-four = true %}
-        false false
-    {% endif %}
 {% endif %}
 
 {% endfor %}
