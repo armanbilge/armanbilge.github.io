@@ -189,7 +189,7 @@ footer {
 }
 
 footer p {
-  line-height:5px;
+  line-height:10px;
 }
 
 @media print, screen and (max-width: 960px) {
