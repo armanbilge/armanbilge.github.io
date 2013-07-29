@@ -11,7 +11,26 @@ custom-head: |
 
 {{ content }}
 
+{% assign multiple-two = false %}
+{% assign multiple-four = true %}
 {% for photo in page.photos %}
 <a data-lightbox="gallery" href="{{ page.base-url }}{{ photo.name }}" title="{{ photo.caption }}"><img alt='{{ photo.name }}' title='{{ photo.caption }}' src='{{ page.base-url }}thumbs/{{ photo.name }}'/></a>
-{% cycle 'cycle0': '', "{% cycle 'cycle1': '', '<br/>' %}" %}
+
+{% if multiple-two %}
+    {% assign multiple-two = false %}
+    {% if multiple-four %}
+        {% assign multiple-four = false %}
+        <br/>
+    {% else %}
+        {% assign multiple-four = true %}
+    {% endif %}
+{% else %}
+    {% assign multiple-two = true %}
+    {% if multiple-four %}
+        {% assign multiple-four = false %}
+    {% else %}
+        {% assign multiple-four = true %}
+    {% endif %}
+{% endif %}
+
 {% endfor %}
