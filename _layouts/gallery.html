@@ -13,5 +13,5 @@ custom-head: |
 
 {% for photo in page.photos %}
 <a data-lightbox="gallery" href="{{ page.base-url }}{{ photo.name }}" title="{{ photo.caption }}"><img alt='{{ photo.name }}' title='{{ photo.caption }}' src='{{ page.base-url }}thumbs/{{ photo.name }}'/></a>
-{% cycle 'cycle0': '', {% cycle 'cycle1': '', '<br/>' %} %}
+{% cycle 'cycle0': '', "{% cycle 'cycle1': '', '<br/>' %}" %}
 {% endfor %}
