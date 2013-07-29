@@ -2,15 +2,14 @@
 layout: default
 custom-head: |
              <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-             <script src="javascripts/lightbox-2.6.min.js"></script>
-             <link href="css/lightbox.css" rel="stylesheet" />
+             <script src="/javascripts/lightbox-2.6.min.js"></script>
+             <link href="/stylesheets/lightbox.css" rel="stylesheet" />
 
 ---
 
 <h1>{{ page.title }}</h1>
 
 {{ content }}
-
 
 {% for photo in page.photos %}
 <a data-lightbox="gallery" href="{{ photo.url }}" title="{{ photo.caption }}">what is this</a>
