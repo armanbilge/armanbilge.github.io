@@ -1,7 +1,9 @@
 ---
 title: test gallery
 layout: gallery
-rubbish: gobbledygook
+photos:
+    - url: http://media.armanbilge.com/pigeons.jpg
+      caption: Some silly pigeons.
 
 ---
 
