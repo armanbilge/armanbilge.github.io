@@ -9,21 +9,8 @@ custom-head: |
 
 {{ content }}
 
-{% assign multiple-two = false %}
-{% assign multiple-four = false %}
-{% for photo in page.photos %}
-<a data-lightbox="gallery" href="{{ page.base-url }}{{ photo.name }}" title="{{ photo.caption }}"><img alt='{{ photo.name }}' title='{{ photo.caption }}' src='{{ page.base-url }}thumbs/{{ photo.name }}'/></a>
-
-{% if multiple-two %}
-    {% assign multiple-two = false %}
-    {% if multiple-four %}
-        {% assign multiple-four = false %}
-        <br/>
-    {% else %}
-        {% assign multiple-four = true %}
-    {% endif %}
-{% else %}
-    {% assign multiple-two = true %}
-{% endif %}
-
-{% endfor %}
+<table>
+{% tablerow photo in page.photos cols: 4%}
+<a data-lightbox="gallery" href="{{ page.base-url }}{{ photo.name }}" title="{{ photo.caption }}"><img alt='{{ photo.name }}' title='{{ photo.caption }}' src='{{ page.base-url }}thumbs/{{ photo.name }}' style="border:2px solid black"/></a>
+{% endtablerow %}
+</table>
