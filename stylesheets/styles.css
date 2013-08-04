@@ -81,10 +81,17 @@ table {
   border-collapse:collapse;
 }
 
+/* 
 th, td {
   text-align:left;
   padding:5px 10px;
   border-bottom:1px solid #e5e5e5;
+}
+ */
+
+th, td {
+  text-align:center;
+  padding:5px 5px;
 }
 
 dt {
@@ -98,6 +105,12 @@ th {
 
 img {
   max-width:100%;
+}
+
+img.nice-border {
+  border:1px solid #e5e5e5;
+  padding:2px;
+  background:#ffffff;
 }
 
 header {

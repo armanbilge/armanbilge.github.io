@@ -10,7 +10,7 @@ custom-head: |
 {{ content }}
 
 <table>
-{% tablerow photo in page.photos cols: 4 %}
-<a data-lightbox="gallery" href="{{ page.base-url }}{{ photo.name }}" title="{{ photo.caption }}"><img alt='{{ photo.name }}' title='{{ photo.caption }}' src='{{ page.base-url }}/thumbs/{{ photo.name }}' style="border:2px solid black"/></a>
+{% tablerow photo in page.photos cols: 3 %}
+<a data-lightbox="gallery" href="{{ page.base-url }}/{{ photo.name }}" title="{{ photo.caption }}"><img alt='{{ photo.name }}' title='{{ photo.caption }}' src='{{ page.base-url }}/thumbs/{{ photo.name }}' class="nice-border"/></a>
 {% endtablerow %}
 </table>
