@@ -3,6 +3,12 @@ title: Turkey
 layout: gallery
 base-url: //media.armanbilge.com/galleries/turkey
 photos:
+    - name: golden-horn.jpg
+      caption: A view of the Golden Horn.
+    - name: boy.jpg
+      caption: A young boy in Bursa.
+    - name: van-cat.jpg
+      caption: A van cat, native to the Van Lake region.
     - name: kemance.jpg
       caption: A street musician plays the Kemance in Beyoglu district, Istanbul.
     - name: pigeons.jpg

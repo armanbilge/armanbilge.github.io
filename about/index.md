@@ -6,6 +6,12 @@ layout: default
 
 # About Me
 
+![Me](//media.armanbilge.com/me.jpg)
+
+I am a first year undergraduate at [The University of Auckland](http://auckland.ac.nz), New Zealand, where I am studying computer science and biology. I grew up in the Greater Boston area . I followed my research interests to the [Computational Evolution Group](http://compevol.auckland.ac.nz) at UoA, where I am continuing my work on coevolution.
+
+[CV](//media.armanbilge.com/cv.pdf)
+
 ---
 
 ## About the website 
