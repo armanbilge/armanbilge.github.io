@@ -3,16 +3,21 @@ title: New England
 layout: gallery
 base-url: .
 photos:
+    - name: dahlia.jpg
     - name: lily.jpg
-      caption:
     - name: sparrow.jpg
-      caption:
+    - name: robin.jpg
+    - name: chicks.jpg
     - name: rabbit.jpg
-      caption: Inquisitive.
+    - name: duckling.jpg
+    - name: dandelion.jpg
     - name: hawk.jpg
-      caption:
+    - name: blackbird.jpg
+    - name: swans.jpg
+    - name: finch.jpg
+    - name: waterlily.jpg
     - name: squirrel.jpg
-      caption:
+    - name: silhouette.jpg
 
 ---
 
