@@ -7,7 +7,7 @@ layout: default
 
 <table>
 {% tablerow gallery in page.galleries cols: 2 %}
-<a href="{{ gallery.url }}"><img alt="{{ gallery.name }}" title="{{ gallery.name }}" src="{{ gallery.thumb }}" class="nice-border"/></a>
+<a href="{{ gallery.url }}"><img alt="{{ gallery.name }}" title="{{ gallery.name }}" src="{{ gallery.thumb }}" class="nice-border"></a>
 <center><a href="{{ gallery.url }}">{{ gallery.name }}</a></center>
 {% endtablerow %}
 </table>

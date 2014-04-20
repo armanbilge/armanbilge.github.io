@@ -1,6 +1,6 @@
 /* Preload images */
 body:after {
-  content: url(//media.armanbilge.com/lightbox/close.png) url(//media.armanbilge.com/lightbox/loading.gif) url(//media.armanbilge.com/lightbox/prev.png) url(//media.armanbilge.com/lightbox/next.png);
+  content: url(/lightbox/close.png) url(/lightbox/loading.gif) url(/lightbox/prev.png) url(/lightbox/next.png);
   display: none;
 }
 

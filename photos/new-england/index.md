@@ -1,7 +1,7 @@
 ---
 title: New England
 layout: gallery
-base-url: //media.armanbilge.com/galleries/new-england
+base-url: .
 photos:
     - name: lily.jpg
       caption:
