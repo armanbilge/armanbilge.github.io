@@ -6,6 +6,8 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/stylesheets/styles.css">
     <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
     <!--[if lt IE 9]>
@@ -18,19 +20,19 @@
       <header>
         <a href="/"><h1>Arman Bilge</h1></a>
         <h2>
-          <a href="/about">About</a><br>
-<!--           <a href="/blog">Blog</a><br> -->
-          <a href="/research">Research</a><br>
-          <a href="/photos">Photography</a><br>
+          {% for link in site.data.navigation %}
+            <a href="{{ link.url }}" {% if page.url contains link.url %} style="font-weight:bold" {% endif %}>{{ link.name }}</a><br>
+          {% endfor %}
         </h2>
       </header>
       <section>
         {{ content }}
       </section>
       <footer>
-        <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
-        <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" >
-        </a><p>Content &copy; 2014 Arman Bilge.<br>Everything is licensed under a <br> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">Creative Commons License</a>.
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed">
+          <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png">
+        </a>
+        <p>Everything is licensed under a <br> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed">Creative Commons License</a>.
       </footer>
     </div>
     <script src="/javascripts/scale.fix.js"></script>
