@@ -6,26 +6,14 @@ title: Research
 
 # Research
 
-Broadly, I am interested in developing computational methods to enhance our understanding of evolutionary processes. Specifically I have focused on for Bayesian inference via Markov chain Monte Carlo
+Broadly, I am interested in developing computational methods to enhance our understanding of evolutionary processes. In particular, I am eager to advance techniques for Bayesian phylogenetic inference via Markov chain Monte Carlo.
 
-## Bayesian Reconstruction of Cophylogenies
+<center>
+![cophylogeny](cophylo.png)
+</center>
 
-Such cophylogenies are relevant not just to studying coevolution, but also gene tree–species tree evolution.
+My current project focuses on systems of interdependent evolutionary trees known as *cophylogenies*. Cophylogenies are relevant to models for coevolution between symbiotic organisms and gene tree–species tree evolution. Specifically, a complete cophylogenetic history consists of a mapping of one evolutionary tree onto another and the sequence of biological events that generated this mapping (e.g., symbiotic host-switches or horizontal gene transfers).
+
+Previous methods for cophylogenetic reconstruction have relied on maximum parsimony criteria that aim to minimise the number of events (i.e., determine the simplest explanation). However, developing a probabilistic approach to this problem would enable reconstruction of cophylogenies using Bayesian MCMC and, furthermore, their joint inference alongside other evolutionary models. The challenge is integrating out the infinite permutations of unseen events that yield the same observed history, either analytically or via an approximation.
 
 [Project source code on GitHub.](//github.com/armanbilge/BECKY/)
-
-## Education & Outreach
-
-I believe that phylogenetics is an excellent platform on which to introduce computational science to students. .
-
-Towards this ends, I am currently preparing [a website](//www.ithinktree.org/) aimed at introducing high school students to phylogenetics and providing instructional materials so that they may conduct their own research using phylogenetic methods.
-
-<!-- 
-I believe that phylogenetics is an excellent platform on which to introduce computational science to students. I was first introduced to phylogenetics in a high school classroom and within a few months was doing a science fair project on the history of the HIV/AIDS virus. These initial experiences substantially encouraged my interest in science as a career.
-
-As a highly interdisciplinary field, phylogenetics appeals to students with a wide variety of interests in biology, computer science, and mathematics, or even the social sciences considering that epidemiology has important connections to human history. One of the main advantages of computational methods is that it opens doors to research topics that are not normally available to secondary-level students, such as infectious diseases. In general, research today is becoming heavily dependent on computers,  is valuable to a future career in science.
-
-It turns out that much of the infrastructure for phylogenetics as an educational platform is already in place: all of the necessary materials are openly accessible to anyone with an internet connection, including genetic data, software, and even supercomputer resources on which to run analyses (thanks to the [CIPRES project](//www.phylo.org/)). This means that even communities with limited resources can potentially implement a phylogenetics curriculum.
-
-. Towards this ends, I am currently preparing [a website](//www.ithinktree.org/) aimed at introducing high school students to phylogenetics and providing instructional materials so that they may conduct their own research using phylogenetic methods.
- -->
