@@ -16,4 +16,4 @@ My current project focuses on systems of interdependent evolutionary trees known
 
 Previous methods for cophylogenetic reconstruction have relied on maximum parsimony criteria that aim to minimise the number of events (i.e., determine the simplest explanation). However, developing a probabilistic approach to this problem would enable reconstruction of cophylogenies using Bayesian MCMC and, furthermore, their joint inference alongside other evolutionary models. The challenge is integrating out the infinite permutations of unseen events that yield the same observed history, either analytically or via an approximation.
 
-[Project source code on GitHub.](//github.com/armanbilge/BECKY/)
+[Project source code on GitHub.](//github.com/armanbilge/Cophy/)
