@@ -8,7 +8,6 @@ deploy:
       GBGFSQcAV2Okv8o0LOtL+fYWftSlnlE3wjZxqQ35cY6OEVRldeh1Zv4DChlq2xaFuxitKHk4iGypxJYds/CrcKIr02Vld+SV2lq0ak1dTAClDHAZfmjFiJHDD+sYsWEj3AkkB52qfjfiidWfPMGUDLsgALmYkdq5naLTjL9OLJw=
   bucket: www.armanbilge.com
   local-dir: _site
-  upload-dir: .
   on:
     repo: armanbilge/armanbilge.github.io
     branch: master
