@@ -1,5 +1,5 @@
 install: gem install jekyll
-script: jekyll
+script: jekyll build
 deploy:
   provider: s3
   access_key_id: AKIAIWVWEWGS27UWPQLA
