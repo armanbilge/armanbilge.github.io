@@ -24,7 +24,7 @@ in 2013, I followed my research interests to the
 [Computational Evolution Group](//compevol.auckland.ac.nz/) at UoA,
 where I am currently developing software to study coevolutionary systems.
 
-[CV](cv.pdf)
+[CV](//build.compevol.org/cv/cv.pdf)
 &bull; [Email](mailto:arman@armanbilge.com)
 &bull; [Github](//github.com/armanbilge)
 &bull; [OSRC](//osrc.dfm.io/armanbilge)
