@@ -9,7 +9,9 @@ photos:
     - name: oystercatcher.jpg
     - name: hills.jpg
     - name: oneroa.jpg
-
+    - name: cows.jpg
+    - name: underpass.jpg
+    - name: sand.jpg
 ---
 
 # New Zealand
