@@ -23,7 +23,7 @@ After I was awarded a scholarship by the
     [Computational Evolution Group](//compevol.auckland.ac.nz/) at UoA, where I
     am currently developing software to study coevolutionary systems.
 
-[CV](//build.compevol.org/cv/cv.pdf)
+[CV](//www.sharelatex.com/github/repos/armanbilge/cv/builds/latest/output.pdf)
 &bull; [Email](mailto:arman@armanbilge.com)
 &bull; [Github](//github.com/armanbilge)
 &bull; [OSRC](//osrc.dfm.io/armanbilge)
