@@ -10,7 +10,7 @@ layout: default
 
 I am a first year undergraduate at
     [The University of Auckland](//auckland.ac.nz/), New Zealand, where I am
-    studying computer science and biology.
+    studying a mix of computer science, statistics, applied maths, and biology.
 I grew up in the Greater Boston area and am an avid photographer of New
     England's flora and fauna.
 During high school I discovered the interdisciplinary field of computational
