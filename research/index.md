@@ -18,7 +18,7 @@ In particular, I am eager to advance techniques for Bayesian phylogenetic
 My current project focuses on systems of interdependent evolutionary trees known
     as *cophylogenies*.
 Cophylogenies are relevant to models for coevolution between symbiotic organisms
-    and gene tree&ndash;species tree evolution.
+    and genome evolution.
 Specifically, a complete cophylogenetic history consists of a mapping of one
     evolutionary tree onto another and the sequence of biological events that
     generated this mapping (e.g., symbiotic host-switches or horizontal gene
@@ -33,4 +33,4 @@ However, developing a probabilistic approach to this problem would enable
 The challenge is to average over the infinite permutations of unseen events that
     yield the same observed history, either analytically or via an approximation.
 
-[Project source code on GitHub.](//github.com/armanbilge/Cophy1/)
+[Project source code on GitHub.](//github.com/armanbilge/Cophy/)
