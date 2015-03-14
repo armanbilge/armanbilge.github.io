@@ -26,7 +26,6 @@ After I was awarded a scholarship by the
 [CV](//www.sharelatex.com/github/repos/armanbilge/cv/builds/latest/output.pdf)
 &bull; [Email](mailto:arman@armanbilge.com)
 &bull; [Github](//github.com/armanbilge)
-&bull; [OSRC](//osrc.dfm.io/armanbilge)
 
 ---
 
