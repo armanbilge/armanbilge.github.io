@@ -8,9 +8,9 @@ layout: default
 
 ![Me](me.jpg)
 
-I am a first year undergraduate at
+I am a second-year undergraduate at
     [The University of Auckland](//auckland.ac.nz/), New Zealand, where I am
-    studying a mix of computer science, statistics, applied maths, and biology.
+    studying a mix of computer science, applied maths, statistics, and biology.
 I grew up in the Greater Boston area and am an avid photographer of New
     England's flora and fauna.
 During high school I discovered the interdisciplinary field of computational
