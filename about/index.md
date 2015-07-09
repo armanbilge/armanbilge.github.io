@@ -21,7 +21,7 @@ After I was awarded a scholarship by the
     [Siemens Foundation](//www.siemens-foundation.org/en/competition/2013_winners.htm)
     in 2013, I followed my research interests to the
     [Computational Evolution Group](//compevol.auckland.ac.nz/) at UoA, where I
-    am currently developing software to study coevolutionary systems.
+    am involved in a number of projects.
 
 [CV](//www.sharelatex.com/github/repos/armanbilge/cv/builds/latest/output.pdf)
 &bull; [Email](mailto:arman@armanbilge.com)
