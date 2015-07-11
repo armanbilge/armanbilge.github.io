@@ -18,18 +18,18 @@ During high school I discovered the interdisciplinary field of computational
     at [Harvard](//www.oeb.harvard.edu/faculty/girguis/) and
     [MIT](//compbio.mit.edu/).
 After I was awarded a scholarship by the
-    [Siemens Foundation](//www.siemens-foundation.org/en/competition/2013_winners.htm)
+    [Siemens Foundation](//web.archive.org/web/20140906134706id_/http://www.siemens-foundation.org/en/competition/2013_winners.htm#3)
     in 2013, I followed my research interests to the
-    [Computational Evolution Group](//compevol.auckland.ac.nz/) at UoA, where I
-    am involved in a number of projects.
+    [Computational Evolution Group](//compevol.auckland.ac.nz/) at UoA, and am
+    involved in a number of projects.
 
-[CV](//www.sharelatex.com/github/repos/armanbilge/cv/builds/latest/output.pdf)
-&bull; [Email](mailto:arman@armanbilge.com)
-&bull; [Github](//github.com/armanbilge)
+<a href="//www.sharelatex.com/github/repos/armanbilge/cv/builds/latest/output.pdf"><span class="octicon octicon-file-text"></span> CV</a> &bull;
+<a href="mailto:arman@armanbilge.com"><span class="octicon octicon-mail"></span>  Email</a> &bull;
+<a href="//github.com/armanbilge"><span class="octicon octicon-mark-github"></span> GitHub</a>
 
 ---
 
-## Colophon
+## Colophon <a href="//github.com/armanbilge/armanbilge.github.io"><span style="font-size: 24px" class="mega-octicon octicon-mark-github"></a>
 
 This is a [Jekyll](//www.jekyllrb.com/)-generated website hosted on
     [Amazon S3](//aws.amazon.com/s3).
@@ -37,5 +37,3 @@ It uses a mildly customized [*minimal* theme](//github.com/orderedlist/minimal).
 Photo galleries implement the
     [Lightbox2](//lokeshdhakar.com/projects/lightbox2/) library and are
     automatically created with a custom Liquid template.
-
-[Website source code on GitHub.](//github.com/armanbilge/armanbilge.github.io)
