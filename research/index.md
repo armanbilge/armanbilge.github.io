@@ -55,7 +55,7 @@ In my implementation of HMC for phylogenetics, it offers on average five times
     better performance than MCMC.
 
 <center>
-    <object width="480px" type="image/svg+xml" data="skatepark.svg.gz"></object>
+    <object width="480px" type="image/svg+xml" data="skatepark.svgz"></object>
 </center>
 
 I presented a [poster](//doi.org/10.6084/m9.figshare.1473743) on "Efficient
