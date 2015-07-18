@@ -20,7 +20,7 @@ During high school I discovered the interdisciplinary field of computational
 After I was awarded a scholarship by the
     [Siemens Foundation](//web.archive.org/web/20140906134706id_/http://www.siemens-foundation.org/en/competition/2013_winners.htm#3)
     in 2013, I followed my research interests to the
-    [Computational Evolution Group](//compevol.auckland.ac.nz/) at UoA, and am
+    [Computational Evolution Group](//compevol.auckland.ac.nz/) at UoA and am
     involved in a number of projects.
 
 <a href="//www.sharelatex.com/github/repos/armanbilge/cv/builds/latest/output.pdf"><span class="octicon octicon-file-text"></span> CV</a> &bull;
