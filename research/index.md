@@ -23,8 +23,8 @@ Specifically, a complete cophylogenetic history consists of a mapping of one
     generated this mapping (e.g., symbiotic host-switches or horizontal gene
     transfers).
 
-Previous methods for cophylogenetic reconstruction generally attend to find the
-    simplest explanation.
+Previous methods for cophylogenetic reconstruction generally attempt to find
+    the simplest explanation.
 However, developing a probabilistic approach to this problem would enable
     reconstruction methods to consider more complex explanations as well as
     provide an idea of the statistical uncertainty.
