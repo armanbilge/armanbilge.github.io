@@ -23,7 +23,7 @@ After I was awarded a scholarship by the
     [Computational Evolution Group](//compevol.auckland.ac.nz/) at UoA and am
     involved in a number of projects.
 
-<a href="//www.sharelatex.com/github/repos/armanbilge/cv/builds/latest/output.pdf"><span class="octicon octicon-file-text"></span> CV</a> &bull;
+<a href="/cv"><span class="octicon octicon-file-text"></span> CV</a> &bull;
 <a href="mailto:arman@armanbilge.com"><span class="octicon octicon-mail"></span>  Email</a> &bull;
 <a href="//github.com/armanbilge"><span class="octicon octicon-mark-github"></span> GitHub</a>
 
