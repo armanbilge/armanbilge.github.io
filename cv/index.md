@@ -21,6 +21,8 @@ custom-head: |
 <span class="left">March 2014–November 2016 (expected)</span>
 <span class="right">Auckland, New Zealand</span><br/>
 
+---
+
 ## Research Experience
 
 <span class="left">**Undergraduate Researcher**</span>
@@ -38,12 +40,16 @@ custom-head: |
 <span class="left">[Girguis Laboratory](//www.oeb.harvard.edu/faculty/girguis)</span>
 <span class="right">January 2013–February 2014</span><br/>
 
+---
+
 ## Teaching Experience
 
 <span class="left">**Instructor**</span>
 <span class="right">**_Lexington High School_**</span><br/>
 <span class="left">Phylogenetics/Computational Biology Club</span>
 <span class="right">October 2012–February 2014</span><br/>
+
+---
 
 ## Conference Presentations
 
@@ -55,6 +61,8 @@ custom-head: |
 <span class="right">February 2015</span><br/>
 <span class="left">**XSEDE12**, Chicago (poster; received travel award)</span>
 <span class="right">July 2012</span><br/>
+
+---
 
 ## Honors and Awards
 
