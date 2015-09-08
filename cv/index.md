@@ -53,9 +53,9 @@ custom-head: |
 
 ## Conference Presentations
 
-<span class="left">**ESEB Congress**, Lausanne (poster)</span>
+<span class="left">**ESEB Congress**, Lausanne ([poster](//dx.doi.org/10.5281/zenodo.22305))</span>
 <span class="right">August 2015</span><br/>
-<span class="left">**SMBE Annual Meeting**, Vienna (poster; received travel award)</span>
+<span class="left">**SMBE Annual Meeting**, Vienna ([poster](//dx.doi.org/10.6084/m9.figshare.1473743); received travel award)</span>
 <span class="right">July 2015</span><br/>
 <span class="left">**New Zealand Phylogenomics Meeting**, Portobello</span>
 <span class="right">February 2015</span><br/>
