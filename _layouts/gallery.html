@@ -1,9 +1,8 @@
 ---
 layout: default
 custom-head: |
-             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-             <script src="/javascripts/lightbox.min.js"></script>
-             <link href="/stylesheets/lightbox.css" rel="stylesheet" >
+             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+             <link href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/css/lightbox.min.css" rel="stylesheet"/>
 
 ---
 
@@ -11,6 +10,8 @@ custom-head: |
 
 <table>
 {% tablerow photo in page.photos cols: 3 %}
-<a data-lightbox="gallery" href="{{ page.base-url }}/{{ photo.name }}" title="{{ photo.caption }}"><img alt="{{ photo.name }}" title="{{ photo.caption }}" src="{{ page.base-url }}/thumbs/{{ photo.name }}" class="nice-border"></a>
+<a href="{{ page.base-url }}/{{ photo.name }}" data-lightbox="gallery" data-title="{{ photo.caption }}"><img alt="{{ photo.name }}" title="{{ photo.caption }}" src="{{ page.base-url }}/thumbs/{{ photo.name }}" class="nice-border"></a>
 {% endtablerow %}
 </table>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/js/lightbox.min.js"></script>
