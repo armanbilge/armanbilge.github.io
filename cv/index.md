@@ -30,6 +30,11 @@ custom-head: |
 <span class="left">[Computational Evolution Group](//compevol.auckland.ac.nz)</span>
 <span class="right">March 2014–Present</span><br/>
 
+<span class="left">**Visiting Researcher**</span>
+<span class="right">**_ETH Zürich_**</span><br/>
+<span class="left">[Computational Evolution Group](//www.bsse.ethz.ch/cevo)</span>
+<span class="right">July–August 2015</span><br/>
+
 <span class="left">**High School Intern**</span>
 <span class="right">**_Massachusetts Institute of Technology_**</span><br/>
 <span class="left">[Computational Biology Group](//compbio.mit.edu)</span>
@@ -42,23 +47,18 @@ custom-head: |
 
 ---
 
-## Teaching Experience
-
-<span class="left">**Instructor**</span>
-<span class="right">**_Lexington High School_**</span><br/>
-<span class="left">Phylogenetics/Computational Biology Club</span>
-<span class="right">October 2012–February 2014</span><br/>
-
----
-
 ## Conference Presentations
 
-<span class="left">**ESEB Congress**, Lausanne ([poster](//dx.doi.org/10.5281/zenodo.22305))</span>
+<span class="left">**AWC Annual Meeting**, Palmerston North ([slides](//doi.org/10.5281/zenodo.32808))</span>
+<span class="right">October 2015</span><br/>
+<span class="left">**ESEB Congress**, Lausanne ([poster](//doi.org/10.5281/zenodo.22305))</span>
 <span class="right">August 2015</span><br/>
-<span class="left">**SMBE Annual Meeting**, Vienna ([poster](//dx.doi.org/10.6084/m9.figshare.1473743); received travel award)</span>
+<span class="left">**SMBE Annual Meeting**, Vienna ([poster](//doi.org/10.6084/m9.figshare.1473743); received travel award)</span>
 <span class="right">July 2015</span><br/>
 <span class="left">**New Zealand Phylogenomics Meeting**, Portobello</span>
 <span class="right">February 2015</span><br/>
+<span class="left">**AWC Annual Meeting**, Palmerston North (best 3 min. thesis award)</span>
+<span class="right">October 2014</span><br/>
 <span class="left">**XSEDE12**, Chicago (poster; received travel award)</span>
 <span class="right">July 2012</span><br/>
 
