@@ -2,7 +2,7 @@ sudo: false
 language: ruby
 rvm:
   - 2.2
-install: gem install jekyll
+install: gem install redcarpet jekyll
 script: jekyll build
 deploy:
   provider: s3
