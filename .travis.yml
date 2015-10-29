@@ -17,4 +17,3 @@ deploy:
     repo: armanbilge/armanbilge.github.io
     branch: master
   skip_cleanup: true
-
