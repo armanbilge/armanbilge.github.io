@@ -31,6 +31,11 @@ custom-head: |
 <span class="right">March 2014–Present</span><br/>
 
 <span class="left">**Visiting Researcher**</span>
+<span class="right">**_Fred Hutchinson Cancer Research Center_**</span><br/>
+<span class="left">[Matsen Group](//matsen.fhcrc.org)</span>
+<span class="right">January 2016</span><br/>
+
+<span class="left">**Visiting Researcher**</span>
 <span class="right">**_ETH Zürich_**</span><br/>
 <span class="left">[Computational Evolution Group](//www.bsse.ethz.ch/cevo)</span>
 <span class="right">July–August 2015</span><br/>
@@ -77,3 +82,13 @@ Siemens Competition in Math, Science and Technology
 <span class="left">**1st and 2nd Places**</span>
 <span class="right">May 2012 and 2013</span><br/>
 Massachusetts State Science and Engineering Fair
+
+---
+
+## Service
+
+**chimes**, [chimes.herokuapp.com](//chimes.herokuapp.com) <br/>
+Developing a system of synchronized chimes for the [Evolution conference](//www.evolutionmeetings.org).
+
+**postvite**, [postvite.herokuapp.com](//postvite.herokuapp.com)<br/>
+Developing a poster invitation system for the [Evolution conference](//www.evolutionmeetings.org).
