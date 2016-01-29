@@ -27,7 +27,7 @@ custom-head: |
 
 <span class="left">**Undergraduate Researcher**</span>
 <span class="right">**_The University of Auckland_**</span><br/>
-<span class="left">[Computational Evolution Group](//compevol.auckland.ac.nz)</span>
+<span class="left">[Centre for Computational Evolution](//compevol.auckland.ac.nz)</span>
 <span class="right">March 2014–Present</span><br/>
 
 <span class="left">**Visiting Researcher**</span>
