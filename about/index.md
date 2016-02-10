@@ -8,7 +8,7 @@ layout: default
 
 ![Me](me.jpg)
 
-I am a second-year undergraduate at
+I am a third-year undergraduate at
     [The University of Auckland](//auckland.ac.nz/), New Zealand, where I am
     studying a mix of computer science, applied maths, statistics, and biology.
 I grew up in the Greater Boston area and am an avid photographer of New
@@ -20,7 +20,7 @@ During high school I discovered the interdisciplinary field of computational
 After I was awarded a scholarship by the
     [Siemens Foundation](//web.archive.org/web/20140906134706id_/http://www.siemens-foundation.org/en/competition/2013_winners.htm#3)
     in 2013, I followed my research interests to the
-    [Computational Evolution Group](//compevol.auckland.ac.nz/) at UoA and am
+    [Centre for Computational Evolution](//compevol.auckland.ac.nz/) at UoA and am
     involved in a number of projects.
 
 <a href="/cv"><span class="octicon octicon-file-text"></span> CV</a> &bull;
