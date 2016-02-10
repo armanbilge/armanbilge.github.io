@@ -10,7 +10,7 @@ Broadly, I am interested in developing computational methods to enhance our
 In particular, I am eager to advance techniques for Bayesian phylogenetic
     inference.
 
-## Cophylogeny Reconstruction <a href="//github.com/armanbilge/Cophy"><span style="font-size: 24px" class="mega-octicon octicon-mark-github"></a>
+## Cophylogeny Reconstruction <a href="//github.com/armanbilge/Cophy"><span style="font-size: 24px" class="mega-octicon octicon-mark-github">
 
 <center>
     <object type="image/svg+xml" data="cophylo.svg"></object>
@@ -32,7 +32,7 @@ The challenge is to find an efficient way to average over the infinite number of
     histories including unobserved events that result in the same observed
     history.
 
-## Hamiltonian Monte Carlo <a href="//github.com/armanbilge/B3/tree/hamilton"><span style="font-size: 24px" class="mega-octicon octicon-mark-github"></a>
+## Hamiltonian Monte Carlo <a href="//github.com/armanbilge/B3/tree/hamilton"><span style="font-size: 24px" class="mega-octicon octicon-mark-github">
 
 Bayesian phylogenetic inference involves sampling parameters for the
     evolutionary model according to their probability given the data.

@@ -29,7 +29,7 @@ After I was awarded a scholarship by the
 
 ---
 
-## Colophon <a href="//github.com/armanbilge/armanbilge.github.io"><span style="font-size: 24px" class="mega-octicon octicon-mark-github"></a>
+## Colophon <a href="//github.com/armanbilge/armanbilge.github.io"><span style="font-size: 24px" class="mega-octicon octicon-mark-github">
 
 This is a [Jekyll](//www.jekyllrb.com/)-generated website hosted on
     [Amazon S3](//aws.amazon.com/s3).
