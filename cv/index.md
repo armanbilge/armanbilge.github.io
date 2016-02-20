@@ -12,7 +12,7 @@ custom-head: |
   </style>
 ---
 
-# Curriculum Vitae <a href="//www.sharelatex.com/github/repos/armanbilge/cv/builds/latest/output.pdf"><span style="font-size: 24px" class="mega-octicon octicon-file-pdf"></a>
+# Curriculum Vitae <a href="//www.sharelatex.com/github/repos/armanbilge/cv/builds/latest/output.pdf"><span style="font-size: 24px" class="mega-octicon octicon-file-pdf">
 
 ## Education
 
@@ -36,7 +36,7 @@ custom-head: |
 <span class="right">January 2016</span><br/>
 
 <span class="left">**Visiting Researcher**</span>
-<span class="right">**_ETH Zürich_**</span><br/>
+<span class="right">**_Swiss Federal Institute of Technology Zürich_**</span><br/>
 <span class="left">[Computational Evolution Group](//www.bsse.ethz.ch/cevo)</span>
 <span class="right">July–August 2015</span><br/>
 
@@ -54,6 +54,8 @@ custom-head: |
 
 ## Conference Presentations
 
+<span class="left">**New Zealand Phylogenomics Meeting**, Mount Ruapehu ([slides](//doi.org/10.5281/zenodo.46350))</span>
+<span class="right">February 2016</span><br/>
 <span class="left">**AWC Annual Meeting**, Palmerston North ([slides](//doi.org/10.5281/zenodo.32808))</span>
 <span class="right">October 2015</span><br/>
 <span class="left">**ESEB Congress**, Lausanne ([poster](//doi.org/10.5281/zenodo.22305))</span>
