@@ -52,6 +52,15 @@ custom-head: |
 
 ---
 
+## Teaching Experience
+
+<span class="left">**Teaching Assistant**</span>
+<span class="right">**_The University of Auckland_**</span><br/>
+<span class="left">[COMPSCI 369 Computational Science](//www.cs.auckland.ac.nz/courses/compsci369s1c/)</span>
+<span class="right">March–June 2016</span><br/>
+
+---
+
 ## Conference Presentations
 
 <span class="left">**New Zealand Phylogenomics Meeting**, Mount Ruapehu ([slides](//doi.org/10.5281/zenodo.46350))</span>
