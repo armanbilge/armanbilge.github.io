@@ -1,7 +1,7 @@
 sudo: false
 language: ruby
 rvm:
-  - 2.2
+  - 2.3
 install: gem install redcarpet jekyll
 script: jekyll build
 deploy:
