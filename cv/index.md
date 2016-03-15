@@ -16,6 +16,11 @@ custom-head: |
 
 ## Education
 
+<span class="left">**Ph.D. in Statistics**</span>
+<span class="right">**_University of Washington_**</span><br/>
+<span class="left">Commencing in January 2017</span>
+<span class="right">Seattle, Washington</span><br/>
+
 <span class="left">**B.Sc. in Computer Science and Mathematics**</span>
 <span class="right">**_The University of Auckland_**</span><br/>
 <span class="left">March 2014–November 2016 (expected)</span>

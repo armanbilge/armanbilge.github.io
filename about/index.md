@@ -10,7 +10,7 @@ layout: default
 
 I am a third-year undergraduate at
     [The University of Auckland](//auckland.ac.nz/), New Zealand, where I am
-    studying a mix of computer science, applied maths, statistics, and biology.
+    studying a mix of computer science, math, statistics, and biology.
 I grew up in the Greater Boston area and am an avid photographer of New
     England's flora and fauna.
 During high school I discovered the interdisciplinary field of computational
@@ -20,11 +20,13 @@ During high school I discovered the interdisciplinary field of computational
 After I was awarded a scholarship by the
     [Siemens Foundation](//web.archive.org/web/20140906134706id_/http://www.siemens-foundation.org/en/competition/2013_winners.htm#3)
     in 2013, I followed my research interests to the
-    [Centre for Computational Evolution](//compevol.auckland.ac.nz/) at UoA and am
-    involved in a number of projects.
+    [Centre for Computational Evolution](//compevol.auckland.ac.nz/) at UoA and
+    am involved in a number of projects.
+In January 2017, I will start my Ph.D. in statistics at the
+    [University of Washington](//washington.edu).
 
 <a href="/cv"><span class="octicon octicon-file-text"></span> CV</a> &bull;
-<a href="mailto:arman@armanbilge.com"><span class="octicon octicon-mail"></span>  Email</a> &bull;
+<a href="mailto:arman@armanbilge.com"><span class="octicon octicon-mail"></span> Email</a> &bull;
 <a href="//github.com/armanbilge"><span class="octicon octicon-mark-github"></span> GitHub</a>
 
 ---
