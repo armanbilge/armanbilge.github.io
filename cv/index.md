@@ -18,7 +18,7 @@ custom-head: |
 
 <span class="left">**Ph.D. in Statistics**</span>
 <span class="right">**_University of Washington_**</span><br/>
-<span class="left">Commencing in January 2017</span>
+<span class="left">Commencing in September 2016</span>
 <span class="right">Seattle, Washington</span><br/>
 
 <span class="left">**B.Sc. in Computer Science and Mathematics**</span>
