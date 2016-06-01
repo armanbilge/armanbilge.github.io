@@ -107,4 +107,4 @@ Massachusetts State Science and Engineering Fair
 Developing a system of synchronized chimes for the [Evolution conference](//www.evolutionmeetings.org).
 
 **postvite**, [postvite.herokuapp.com](//postvite.herokuapp.com)<br/>
-Developing a poster invitation system for the [Evolution conference](//www.evolutionmeetings.org).
+Developed a poster invitation system used by the [Evolution](//www.evolutionmeetings.org) and [SMBE](//www.smbe.org) conferences.
