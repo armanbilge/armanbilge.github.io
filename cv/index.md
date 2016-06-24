@@ -68,6 +68,8 @@ custom-head: |
 
 ## Conference Presentations
 
+<span class="left">**Evolution**, Austin ([slides](//doi.org/10.5281/zenodo.55957))</span>
+<span class="right">June 2016</span><br/>
 <span class="left">**New Zealand Phylogenomics Meeting**, Mount Ruapehu ([slides](//doi.org/10.5281/zenodo.46350))</span>
 <span class="right">February 2016</span><br/>
 <span class="left">**AWC Annual Meeting**, Palmerston North ([slides](//doi.org/10.5281/zenodo.32808))</span>
