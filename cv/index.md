@@ -68,6 +68,8 @@ custom-head: |
 
 ## Conference Presentations
 
+<span class="left">**SMBE Annual Meeting**, Gold Coast ([poster](//doi.org/10.5281/zenodo.56495))</span>
+<span class="right">July 2016</span><br/>
 <span class="left">**Evolution**, Austin ([slides](//doi.org/10.5281/zenodo.55957))</span>
 <span class="right">June 2016</span><br/>
 <span class="left">**New Zealand Phylogenomics Meeting**, Mount Ruapehu ([slides](//doi.org/10.5281/zenodo.46350))</span>
