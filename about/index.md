@@ -22,7 +22,7 @@ After I was awarded a scholarship by the
     in 2013, I followed my research interests to the
     [Centre for Computational Evolution](//compevol.auckland.ac.nz/) at UoA and
     am involved in a number of projects.
-In January 2017, I will start my Ph.D. in statistics at the
+In September 2016, I will start my Ph.D. in statistics at the
     [University of Washington](//washington.edu).
 
 <a href="/cv"><span class="octicon octicon-file-text"></span> CV</a> &bull;
