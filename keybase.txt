@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/arman
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://armanbilge.com
+  * I am arman (https://keybase.io/arman) on keybase.
+  * I have a public key ASCDQkGP1zR4y5DZ1GZ0dWzd770b0L3NjcZdIEqeApX7Pwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01208342418fd73478cb90d9d46674756cddefbd1bd0bdcd8dc65d204a9e0295fb3f0a",
+            "host": "keybase.io",
+            "kid": "01208342418fd73478cb90d9d46674756cddefbd1bd0bdcd8dc65d204a9e0295fb3f0a",
+            "uid": "e644df618fef9fdd44dd7f26f1077019",
+            "username": "arman"
+        },
+        "service": {
+            "hostname": "armanbilge.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.17"
+    },
+    "ctime": 1473295950,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1473295904,
+        "hash": "4edd3aa5faa69d053d4a6c4e3fdc5eb25ac5c9c64b107a04ebf71f2d0a7561ad4b2411ce9aeb7914396b651b87a5bfd2c38ebbbac8129450f81e1257302399e8",
+        "seqno": 624351
+    },
+    "prev": "e87cd3627127771d3ea240876ea382c1e864179db2c79ff9c63dab499c3eeb1d",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgg0JBj9c0eMuQ2dRmdHVs3e+9G9C9zY3GXSBKngKV+z8Kp3BheWxvYWTFAvJ7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwODM0MjQxOGZkNzM0NzhjYjkwZDlkNDY2NzQ3NTZjZGRlZmJkMWJkMGJkY2Q4ZGM2NWQyMDRhOWUwMjk1ZmIzZjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwODM0MjQxOGZkNzM0NzhjYjkwZDlkNDY2NzQ3NTZjZGRlZmJkMWJkMGJkY2Q4ZGM2NWQyMDRhOWUwMjk1ZmIzZjBhIiwidWlkIjoiZTY0NGRmNjE4ZmVmOWZkZDQ0ZGQ3ZjI2ZjEwNzcwMTkiLCJ1c2VybmFtZSI6ImFybWFuIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJhcm1hbmJpbGdlLmNvbSIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTcifSwiY3RpbWUiOjE0NzMyOTU5NTAsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ3MzI5NTkwNCwiaGFzaCI6IjRlZGQzYWE1ZmFhNjlkMDUzZDRhNmM0ZTNmZGM1ZWIyNWFjNWM5YzY0YjEwN2EwNGViZjcxZjJkMGE3NTYxYWQ0YjI0MTFjZTlhZWI3OTE0Mzk2YjY1MWI4N2E1YmZkMmMzOGViYmJhYzgxMjk0NTBmODFlMTI1NzMwMjM5OWU4Iiwic2Vxbm8iOjYyNDM1MX0sInByZXYiOiJlODdjZDM2MjcxMjc3NzFkM2VhMjQwODc2ZWEzODJjMWU4NjQxNzlkYjJjNzlmZjljNjNkYWI0OTljM2VlYjFkIiwic2Vxbm8iOjYsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RARsBvjANfJIKNaq9mNnMLnIBi0/13ZmkaVdoCuQ1Yxi0FPUNTjLoQN0BBjpVsd2fL4AYIb4JyIKGOhBJl7i2uCahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIISGPt7/pKjmvkeopXZItwbr1U0TpE02evMxGbq7j6Qgo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/arman
+
+==================================================================
