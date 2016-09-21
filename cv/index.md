@@ -18,32 +18,27 @@ custom-head: |
 
 <span class="left">**Ph.D. in Statistics**</span>
 <span class="right">**_University of Washington_**</span><br/>
-<span class="left">Commencing in September 2016</span>
+<span class="left">September 2016–Present</span>
 <span class="right">Seattle, Washington</span><br/>
 
 <span class="left">**B.Sc. in Computer Science and Mathematics**</span>
 <span class="right">**_The University of Auckland_**</span><br/>
-<span class="left">March 2014–November 2016 (expected)</span>
+<span class="left">March 2014–November 2016</span>
 <span class="right">Auckland, New Zealand</span><br/>
 
 ---
 
 ## Research Experience
 
+<span class="left">**Research Assistant**</span>
+<span class="right">**_Fred Hutchinson Cancer Research Center_**</span><br/>
+<span class="left">[Matsen Group](//matsen.group)</span>
+<span class="right">September 2016–Present</span><br/>
+
 <span class="left">**Undergraduate Researcher**</span>
 <span class="right">**_The University of Auckland_**</span><br/>
 <span class="left">[Centre for Computational Evolution](//compevol.auckland.ac.nz)</span>
-<span class="right">March 2014–Present</span><br/>
-
-<span class="left">**Visiting Researcher**</span>
-<span class="right">**_Fred Hutchinson Cancer Research Center_**</span><br/>
-<span class="left">[Matsen Group](//matsen.fhcrc.org)</span>
-<span class="right">January 2016</span><br/>
-
-<span class="left">**Visiting Researcher**</span>
-<span class="right">**_Swiss Federal Institute of Technology Zürich_**</span><br/>
-<span class="left">[Computational Evolution Group](//www.bsse.ethz.ch/cevo)</span>
-<span class="right">July–August 2015</span><br/>
+<span class="right">March 2014–September 2016</span><br/>
 
 <span class="left">**High School Intern**</span>
 <span class="right">**_Massachusetts Institute of Technology_**</span><br/>
