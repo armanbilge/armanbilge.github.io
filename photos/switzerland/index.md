@@ -1,5 +1,5 @@
 ---
-title: Turkey
+title: Switzerland
 layout: gallery
 base-url: .
 photos:
