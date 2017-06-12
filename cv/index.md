@@ -12,7 +12,7 @@ custom-head: |
   </style>
 ---
 
-# Curriculum Vitae <a href="//latexonline.cc/compile?git=https://github.com/armanbilge/cv&target=cv.tex&download=armanbilge_cv.pdf"><span style="font-size: 24px" class="mega-octicon octicon-file-pdf">
+# Curriculum Vitae <a href="//latexonline.cc/compile?git=https://github.com/armanbilge/cv&command=xelatex&target=cv.tex&download=armanbilge_cv.pdf"><span style="font-size: 24px" class="mega-octicon octicon-file-pdf">
 
 ## Education
 
