@@ -45,11 +45,6 @@ custom-head: |
 <span class="left">[Computational Biology Group](//compbio.mit.edu)</span>
 <span class="right">March 2013–February 2014</span><br/>
 
-<span class="left">**High School Intern**</span>
-<span class="right">**_Harvard University_**</span><br/>
-<span class="left">[Girguis Laboratory](//www.oeb.harvard.edu/faculty/girguis)</span>
-<span class="right">January 2013–February 2014</span><br/>
-
 ---
 
 ## Teaching Experience
@@ -58,6 +53,14 @@ custom-head: |
 <span class="right">**_The University of Auckland_**</span><br/>
 <span class="left">[COMPSCI 369 Computational Science](//www.cs.auckland.ac.nz/courses/compsci369s1c/)</span>
 <span class="right">March–June 2016</span><br/>
+
+---
+
+## Publications
+
+V Dinh\*, **AB**\*, C Zhang\*, FA Matsen (2017). Probabilistic Path Hamiltonian Monte Carlo. *34<sup>th</sup> International Conference on Machine Learning*. [arXiv:1702.07814](//arxiv.org/abs/1702.07814)
+
+\* Equal contribution
 
 ---
 
@@ -102,8 +105,8 @@ Massachusetts State Science and Engineering Fair
 
 ## Service
 
+**postvites**, [www.postvites.com](//www.postvites.com)<br/>
+Developed a poster invitation system used by the [Evolution](//www.evolutionmeetings.org) and [SMBE](//www.smbe.org) conferences.
+
 **chimes**, [chimes.herokuapp.com](//chimes.herokuapp.com) <br/>
 Developed a timing system for the [Evolution conference](//www.evolutionmeetings.org).
-
-**postvite**, [postvite.herokuapp.com](//postvite.herokuapp.com)<br/>
-Developed a poster invitation system used by the [Evolution](//www.evolutionmeetings.org) and [SMBE](//www.smbe.org) conferences.
