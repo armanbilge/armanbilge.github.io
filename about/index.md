@@ -1,7 +1,8 @@
 ---
 title: About
 layout: default
-
+custom-head:
+- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 ---
 
 # About Me
@@ -15,8 +16,9 @@ After I was awarded a scholarship by the [Siemens Foundation](//web.archive.org/
 In September 2016, I started my Ph.D. in statistics at UW.
 
 <a href="/cv"><span class="octicon octicon-file-text"></span> CV</a> &bull;
-<a href="mailto:arman@armanbilge.com"><span class="octicon octicon-mail"></span> Email</a> &bull;
-<a href="//github.com/armanbilge"><span class="octicon octicon-mark-github"></span> GitHub</a>
+<a href="mailto:arman@armanbilge.com"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i> @armanbilge</a> &bull;
+<a href="//github.com/armanbilge"><span class="octicon octicon-mark-github"></span> @armanbilge</a>&bull;
+<a href="mailto:arman@armanbilge.com"><span class="octicon octicon-mail"></span> arman@armanbilge.com</a>
 
 ---
 
