@@ -105,7 +105,13 @@ Massachusetts State Science and Engineering Fair
 
 ## Service
 
-**postvites**, [www.postvites.com](//www.postvites.com)<br/>
+**Tutor**, [Seattle MESA](http://seattlemesa.org/) <br/>
+Tutoring students in STEM subjects at low income public high schools.
+
+**Judge**, various science and engineering fairs <br/>
+Judged middle/high school and undergrad projects at [TAF Academy](http://techaccess.org/academy/), [CSRSEF](http://www.bellevuecollege.edu/sciencefair/), and Fred Hutch [SURP](//www.fredhutch.org/en/education-training/undergraduate-students.html).
+
+**postvites**, [www.postvites.com](//www.postvites.com) <br/>
 Developed a poster invitation system used by the [Evolution](//www.evolutionmeetings.org) and [SMBE](//www.smbe.org) conferences.
 
 **chimes**, [chimes.herokuapp.com](//chimes.herokuapp.com) <br/>
