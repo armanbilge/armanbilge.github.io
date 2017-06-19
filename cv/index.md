@@ -58,7 +58,7 @@ custom-head: |
 
 ## Publications
 
-V Dinh\*, **AB**\*, C Zhang\*, FA Matsen (2017). Probabilistic Path Hamiltonian Monte Carlo. *34<sup>th</sup> International Conference on Machine Learning*. [arXiv:1702.07814](//arxiv.org/abs/1702.07814)
+V Dinh,\* **AB**,\* C Zhang,\* FA Matsen (2017). Probabilistic Path Hamiltonian Monte Carlo. *34<sup>th</sup> International Conference on Machine Learning*. [arXiv:1702.07814](//arxiv.org/abs/1702.07814)
 
 \* Equal contribution
 
