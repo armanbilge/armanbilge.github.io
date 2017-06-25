@@ -66,6 +66,8 @@ V Dinh,\* **AB**,\* C Zhang,\* FA Matsen (2017). Probabilistic Path Hamiltonian 
 
 ## Conference Presentations
 
+<span class="left">**Evolution**, Portland ([poster](//doi.org/10.5281/zenodo.814272))</span>
+<span class="right">June 2017</span><br/>
 <span class="left">**SMBE Annual Meeting**, Gold Coast ([poster](//doi.org/10.5281/zenodo.56495))</span>
 <span class="right">July 2016</span><br/>
 <span class="left">**Evolution**, Austin ([video](//www.youtube.com/watch?v=Vdas0hNneMo); [slides](//doi.org/10.5281/zenodo.55957))</span>
