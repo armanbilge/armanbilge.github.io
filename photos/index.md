@@ -3,6 +3,9 @@ title: Photography
 layout: galleries
 
 galleries:
+    - name: Japan
+      url: japan/
+      thumb: japan/thumbs/foliage.jpg
     - name: New England
       url: new-england/
       thumb: new-england/thumbs/rabbit.jpg
