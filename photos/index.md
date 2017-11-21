@@ -3,9 +3,6 @@ title: Photography
 layout: galleries
 
 galleries:
-    - name: Japan
-      url: japan/
-      thumb: japan/thumbs/foliage.jpg
     - name: New England
       url: new-england/
       thumb: new-england/thumbs/rabbit.jpg
@@ -15,6 +12,9 @@ galleries:
     - name: New Zealand
       url: new-zealand/
       thumb: new-zealand/thumbs/whakairo-cover.jpg
+    - name: Japan
+      url: japan/
+      thumb: japan/thumbs/foliage.jpg
     - name: Switzerland
       url: switzerland/
       thumb: switzerland/thumbs/cow.jpg
