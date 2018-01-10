@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Arman Bilge   @armanbilge   arman@overlake.io">
+  <title>A tour of Scala,   guided inspired by Spire</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0//css/reveal.css">
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      .smallcaps{font-variant: small-caps;}
+      .line-block{white-space: pre-line;}
+      .column{display: inline-block;}
+  </style>
+  <style type="text/css">
+div.sourceLine, a.sourceLine { display: inline-block; min-height: 1.25em; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; }
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+div.sourceLine, a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource div.sourceLine, .numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource div.sourceLine::before, .numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em; }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; color: #aaaaaa;  padding-left: 4px; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; color = initial; }
+}
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.bn { color: #40a070; } /* BaseN */
+code span.fl { color: #40a070; } /* Float */
+code span.ch { color: #4070a0; } /* Char */
+code span.st { color: #4070a0; } /* String */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.ot { color: #007020; } /* Other */
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.fu { color: #06287e; } /* Function */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code span.cn { color: #880000; } /* Constant */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.im { } /* Import */
+code span.va { color: #19177c; } /* Variable */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.op { color: #666666; } /* Operator */
+code span.bu { } /* BuiltIn */
+code span.ex { } /* Extension */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.at { color: #7d9029; } /* Attribute */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0//css/theme/simple.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0//css/print/pdf.css' : 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0//css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0//lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/contrib/auto-render.min.js"></script><script>document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body);
+  });</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+  <style type="text/css">
+    .reveal h1 { font-size: 2em; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+  <h1 class="title">A tour of Scala, <br/> <del>guided</del> inspired by Spire</h1>
+  <p class="author">Arman Bilge <br/> <span class="citation" data-cites="armanbilge">@armanbilge</span> <br/> arman@overlake.io</p>
+</section>
+
+<section id="spire" class="slide level1">
+<h1>Spire</h1>
+<ul>
+<li>I learn new languages by lots of reading</li>
+<li>“Spire is a numeric library for Scala which is intended to be generic, fast, and precise.”</li>
+<li>https://github.com/non/spire</li>
+</ul>
+<p><img data-src="contributors.png" style="width:50.0%" /></p>
+</section>
+<section id="about-me" class="slide level1">
+<h1>About me</h1>
+<ul>
+<li>5 years experience w/ Java, 2 years w/ Scala</li>
+<li>Expertise is computational statistics applied to evolutionary biology</li>
+<li>taking time off from PhD to focus on new venture</li>
+</ul>
+</section>
+<section id="abstracting-over-numerical-types" class="slide level1">
+<h1>Abstracting over numerical types</h1>
+<ul>
+<li>Good code uses abstraction: prefer <code>List&lt;T&gt;</code> over <code>ArrayList&lt;T&gt;</code>, etc.</li>
+<li>“Correct” numeric type not always obvious</li>
+<li><code>int</code> or <code>long</code>; <code>float</code>, <code>double</code>, or <code>BigDecimal</code>?</li>
+</ul>
+</section>
+<section id="oo-solution-inheritance" class="slide level1">
+<h1>OO solution: inheritance</h1>
+<pre class="sourceCode scala"><code class="sourceCode scala"><div class="sourceLine" id="1" href="#1" data-line-number="1"><span class="kw">trait</span> Multiplicable[T] {</div>
+<div class="sourceLine" id="2" href="#2" data-line-number="2">  <span class="kw">def</span> *(a: T): T</div>
+<div class="sourceLine" id="3" href="#3" data-line-number="3">}</div>
+<div class="sourceLine" id="4" href="#4" data-line-number="4"></div>
+<div class="sourceLine" id="5" href="#5" data-line-number="5"><span class="kw">class</span> <span class="fu">MyInt</span>(<span class="kw">val</span> i: Int) <span class="kw">extends</span> Multiplicable[MyInt] { ... }</div>
+<div class="sourceLine" id="6" href="#6" data-line-number="6"><span class="kw">class</span> <span class="fu">MyLong</span>(<span class="kw">val</span> i: Long) <span class="kw">extends</span> Multiplicable[MyLong] { ... }</div>
+<div class="sourceLine" id="7" href="#7" data-line-number="7"></div>
+<div class="sourceLine" id="8" href="#8" data-line-number="8"><span class="kw">def</span> square[T &lt;: Multiplicable[T]](x: T): T = x * x</div>
+<div class="sourceLine" id="9" href="#9" data-line-number="9"></div>
+<div class="sourceLine" id="10" href="#10" data-line-number="10"><span class="fu">square</span>(<span class="kw">new</span> <span class="fu">MyInt</span>(<span class="dv">2</span>))</div></code></pre>
+</section>
+<section id="moving-towards-typeclasses" class="slide level1">
+<h1>Moving towards typeclasses</h1>
+<pre class="sourceCode scala"><code class="sourceCode scala"><div class="sourceLine" id="1" href="#1" data-line-number="1"><span class="kw">trait</span> IsMultiplicable[T] {</div>
+<div class="sourceLine" id="2" href="#2" data-line-number="2">  <span class="kw">def</span> <span class="fu">times</span>(a: T, b: T): T</div>
+<div class="sourceLine" id="3" href="#3" data-line-number="3">}</div>
+<div class="sourceLine" id="4" href="#4" data-line-number="4"></div>
+<div class="sourceLine" id="5" href="#5" data-line-number="5"><span class="kw">object</span> IntIsMultiplicable <span class="kw">extends</span> IsMultiplicable[Int] {</div>
+<div class="sourceLine" id="6" href="#6" data-line-number="6">  <span class="kw">def</span> <span class="fu">times</span>(a: Int, b: Int) = a * b</div>
+<div class="sourceLine" id="7" href="#7" data-line-number="7">}</div>
+<div class="sourceLine" id="8" href="#8" data-line-number="8"><span class="kw">object</span> LongIsMultiplicable <span class="kw">extends</span> IsMultiplicable[Long] { ... }</div>
+<div class="sourceLine" id="9" href="#9" data-line-number="9"></div>
+<div class="sourceLine" id="10" href="#10" data-line-number="10"><span class="kw">def</span> square[T](x: T, impl: IsMultiplicable[T]): T =</div>
+<div class="sourceLine" id="11" href="#11" data-line-number="11">  impl.<span class="fu">times</span>(x, x)</div>
+<div class="sourceLine" id="12" href="#12" data-line-number="12"></div>
+<div class="sourceLine" id="13" href="#13" data-line-number="13"><span class="fu">square</span>(<span class="dv">2</span>, IntIsMultiplicable)</div></code></pre>
+</section>
+<section id="implicits-in-scala" class="slide level1">
+<h1>Implicits in Scala</h1>
+<ol type="1">
+<li>implicit conversions</li>
+</ol>
+<pre class="sourceCode scala"><code class="sourceCode scala"><div class="sourceLine" id="1" href="#1" data-line-number="1"><span class="kw">implicit</span> <span class="kw">def</span> <span class="fu">intWrapper</span>(x: Int) = <span class="kw">new</span> RichInt(x)</div>
+<div class="sourceLine" id="2" href="#2" data-line-number="2"><span class="kw">class</span> RichInt(<span class="kw">val</span> self: Int) {</div>
+<div class="sourceLine" id="3" href="#3" data-line-number="3">  <span class="kw">def</span> <span class="fu">until</span>(end: Int): Range = <span class="fu">Range</span>(self, end)</div>
+<div class="sourceLine" id="4" href="#4" data-line-number="4">}</div>
+<div class="sourceLine" id="5" href="#5" data-line-number="5"><span class="kw">for</span> (i &lt;- <span class="dv">0</span> until <span class="dv">10</span>) <span class="fu">println</span>(i)</div></code></pre>
+<ol start="2" type="1">
+<li>implicit parameters</li>
+</ol>
+<pre class="sourceCode scala"><code class="sourceCode scala"><div class="sourceLine" id="1" href="#1" data-line-number="1"><span class="kw">class</span> <span class="fu">Config</span>(option: Boolean)</div>
+<div class="sourceLine" id="2" href="#2" data-line-number="2"><span class="kw">def</span> <span class="fu">f</span>(x: String)(<span class="kw">implicit</span> cfg: Config) = { ... }</div>
+<div class="sourceLine" id="3" href="#3" data-line-number="3"></div>
+<div class="sourceLine" id="4" href="#4" data-line-number="4"><span class="kw">implicit</span> config = <span class="kw">new</span> <span class="fu">Config</span>(<span class="kw">false</span>)</div>
+<div class="sourceLine" id="5" href="#5" data-line-number="5"><span class="fu">f</span>(<span class="st">&quot;hello world&quot;</span>)</div></code></pre>
+</section>
+<section id="typeclasses" class="slide level1">
+<h1>Typeclasses</h1>
+<pre class="sourceCode scala"><code class="sourceCode scala"><div class="sourceLine" id="1" href="#1" data-line-number="1"><span class="kw">trait</span> IsMultiplicable[T] {</div>
+<div class="sourceLine" id="2" href="#2" data-line-number="2">  <span class="kw">def</span> <span class="fu">times</span>(a: T, b: T): T</div>
+<div class="sourceLine" id="3" href="#3" data-line-number="3">}</div>
+<div class="sourceLine" id="4" href="#4" data-line-number="4"></div>
+<div class="sourceLine" id="5" href="#5" data-line-number="5"><span class="kw">implicit</span> <span class="kw">object</span> IntIsMultiplicable <span class="kw">extends</span> IsMultiplicable[Int] {</div>
+<div class="sourceLine" id="6" href="#6" data-line-number="6">  <span class="kw">def</span> <span class="fu">times</span>(a: Int, b: Int) = a * b</div>
+<div class="sourceLine" id="7" href="#7" data-line-number="7">}</div>
+<div class="sourceLine" id="8" href="#8" data-line-number="8"></div>
+<div class="sourceLine" id="9" href="#9" data-line-number="9"><span class="kw">def</span> square[T](x: T)(<span class="kw">implicit</span> impl: IsMultiplicable[T]): T =</div>
+<div class="sourceLine" id="10" href="#10" data-line-number="10">  impl.<span class="fu">times</span>(x, x)</div>
+<div class="sourceLine" id="11" href="#11" data-line-number="11"></div>
+<div class="sourceLine" id="12" href="#12" data-line-number="12"><span class="fu">square</span>(<span class="dv">2</span>)</div></code></pre>
+</section>
+<section id="boxing" class="slide level1">
+<h1>Boxing</h1>
+<ul>
+<li>Primitives vs references: balloons vs. strings to balloons</li>
+<li>Java: <code>int</code> vs <code>Integer</code>; more transparent in Scala (<code>Int</code>)</li>
+<li>Generics force boxing of primitives as objects</li>
+</ul>
+</section>
+<section id="boxed-implementation" class="slide level1">
+<h1>Boxed implementation</h1>
+<pre class="sourceCode scala"><code class="sourceCode scala"><div class="sourceLine" id="1" href="#1" data-line-number="1"><span class="kw">trait</span> IsMultiplicable[T] {</div>
+<div class="sourceLine" id="2" href="#2" data-line-number="2">  <span class="kw">def</span> <span class="fu">times</span>(a: T, b: T): T</div>
+<div class="sourceLine" id="3" href="#3" data-line-number="3">}</div>
+<div class="sourceLine" id="4" href="#4" data-line-number="4"></div>
+<div class="sourceLine" id="5" href="#5" data-line-number="5"><span class="kw">implicit</span> <span class="kw">object</span> IntIsMultiplicable <span class="kw">extends</span> IsMultiplicable[Int] {</div>
+<div class="sourceLine" id="6" href="#6" data-line-number="6">  <span class="kw">def</span> <span class="fu">times</span>(a: Int, b: Int) = a * b</div>
+<div class="sourceLine" id="7" href="#7" data-line-number="7">}</div>
+<div class="sourceLine" id="8" href="#8" data-line-number="8"></div>
+<div class="sourceLine" id="9" href="#9" data-line-number="9"><span class="kw">def</span> square[T](x: T)(<span class="kw">implicit</span> impl: IsMultiplicable[T]): T =</div>
+<div class="sourceLine" id="10" href="#10" data-line-number="10">  impl.<span class="fu">times</span>(x, x)</div>
+<div class="sourceLine" id="11" href="#11" data-line-number="11"></div>
+<div class="sourceLine" id="12" href="#12" data-line-number="12"><span class="fu">square</span>(<span class="dv">2</span>)</div></code></pre>
+</section>
+<section id="boxed-implementation-1" class="slide level1">
+<h1>Boxed implementation</h1>
+<pre class="sourceCode java"><code class="sourceCode java"><div class="sourceLine" id="1" href="#1" data-line-number="1"><span class="kw">public</span> <span class="dt">final</span> <span class="kw">class</span> Main$</div>
+<div class="sourceLine" id="2" href="#2" data-line-number="2">{</div>
+<div class="sourceLine" id="3" href="#3" data-line-number="3"></div>
+<div class="sourceLine" id="4" href="#4" data-line-number="4">    <span class="kw">public</span> <span class="bu">Object</span> <span class="fu">square</span>(<span class="bu">Object</span> x, Main.<span class="fu">IsMultiplicable</span> impl)</div>
+<div class="sourceLine" id="5" href="#5" data-line-number="5">    {</div>
+<div class="sourceLine" id="6" href="#6" data-line-number="6">        <span class="kw">return</span> impl.<span class="fu">times</span>(x, x);</div>
+<div class="sourceLine" id="7" href="#7" data-line-number="7">    }</div>
+<div class="sourceLine" id="8" href="#8" data-line-number="8"></div>
+<div class="sourceLine" id="9" href="#9" data-line-number="9">    <span class="kw">private</span> Main$()</div>
+<div class="sourceLine" id="10" href="#10" data-line-number="10">    {</div>
+<div class="sourceLine" id="11" href="#11" data-line-number="11">        MODULE$ = <span class="kw">this</span>;</div>
+<div class="sourceLine" id="12" href="#12" data-line-number="12">        <span class="fu">square</span>(BoxesRunTime.<span class="fu">boxToInteger</span>(<span class="dv">2</span>), Main.<span class="fu">IntIsMultiplicable</span>..<span class="fu">MODULE</span>$);</div>
+<div class="sourceLine" id="13" href="#13" data-line-number="13">    }</div>
+<div class="sourceLine" id="14" href="#14" data-line-number="14"></div>
+<div class="sourceLine" id="15" href="#15" data-line-number="15">    <span class="kw">public</span> <span class="dt">static</span> Main$ MODULE$;</div>
+<div class="sourceLine" id="16" href="#16" data-line-number="16"></div>
+<div class="sourceLine" id="17" href="#17" data-line-number="17">    <span class="dt">static</span></div>
+<div class="sourceLine" id="18" href="#18" data-line-number="18">    {</div>
+<div class="sourceLine" id="19" href="#19" data-line-number="19">        <span class="kw">new</span> Main$();</div>
+<div class="sourceLine" id="20" href="#20" data-line-number="20">    }</div>
+<div class="sourceLine" id="21" href="#21" data-line-number="21">}</div></code></pre>
+</section>
+<section id="boxed-implementation-2" class="slide level1">
+<h1>Boxed implementation</h1>
+<pre class="sourceCode java"><code class="sourceCode java"><div class="sourceLine" id="1" href="#1" data-line-number="1"><span class="kw">public</span> <span class="dt">static</span> <span class="kw">class</span> Main$IntIsMultiplicable$</div>
+<div class="sourceLine" id="2" href="#2" data-line-number="2">    <span class="kw">implements</span> Main.<span class="fu">IsMultiplicable</span></div>
+<div class="sourceLine" id="3" href="#3" data-line-number="3">{</div>
+<div class="sourceLine" id="4" href="#4" data-line-number="4"></div>
+<div class="sourceLine" id="5" href="#5" data-line-number="5">    <span class="kw">public</span> <span class="dt">int</span> <span class="fu">times</span>(<span class="dt">int</span> a, <span class="dt">int</span> b)</div>
+<div class="sourceLine" id="6" href="#6" data-line-number="6">    {</div>
+<div class="sourceLine" id="7" href="#7" data-line-number="7">        <span class="kw">return</span> a * b;</div>
+<div class="sourceLine" id="8" href="#8" data-line-number="8">    }</div>
+<div class="sourceLine" id="9" href="#9" data-line-number="9"></div>
+<div class="sourceLine" id="10" href="#10" data-line-number="10">    <span class="kw">public</span> <span class="kw">volatile</span> <span class="bu">Object</span> <span class="fu">times</span>(<span class="bu">Object</span> a, <span class="bu">Object</span> b)</div>
+<div class="sourceLine" id="11" href="#11" data-line-number="11">    {</div>
+<div class="sourceLine" id="12" href="#12" data-line-number="12">        <span class="kw">return</span> BoxesRunTime.<span class="fu">boxToInteger</span>(<span class="fu">times</span>(BoxesRunTime.<span class="fu">unboxToInt</span>(a), BoxesRunTime.<span class="fu">unboxToInt</span>(b)));</div>
+<div class="sourceLine" id="13" href="#13" data-line-number="13">    }</div>
+<div class="sourceLine" id="14" href="#14" data-line-number="14"></div>
+<div class="sourceLine" id="15" href="#15" data-line-number="15">}</div></code></pre>
+</section>
+<section id="specialization" class="slide level1">
+<h1>Specialization</h1>
+<pre class="sourceCode scala"><code class="sourceCode scala"><div class="sourceLine" id="1" href="#1" data-line-number="1"><span class="kw">trait</span> IsMultiplicable[@specialized T] {</div>
+<div class="sourceLine" id="2" href="#2" data-line-number="2">  <span class="kw">def</span> <span class="fu">times</span>(a: T, b: T): T</div>
+<div class="sourceLine" id="3" href="#3" data-line-number="3">}</div>
+<div class="sourceLine" id="4" href="#4" data-line-number="4"></div>
+<div class="sourceLine" id="5" href="#5" data-line-number="5"><span class="kw">implicit</span> <span class="kw">object</span> IntIsMultiplicable <span class="kw">extends</span> IsMultiplicable[Int] {</div>
+<div class="sourceLine" id="6" href="#6" data-line-number="6">  <span class="kw">def</span> <span class="fu">times</span>(a: Int, b: Int) = a * b</div>
+<div class="sourceLine" id="7" href="#7" data-line-number="7">}</div>
+<div class="sourceLine" id="8" href="#8" data-line-number="8"></div>
+<div class="sourceLine" id="9" href="#9" data-line-number="9"><span class="kw">def</span> square[@specialized T](x: T)(<span class="kw">implicit</span> impl: IsMultiplicable[T]): T =</div>
+<div class="sourceLine" id="10" href="#10" data-line-number="10">  impl.<span class="fu">times</span>(x, x)</div>
+<div class="sourceLine" id="11" href="#11" data-line-number="11"></div>
+<div class="sourceLine" id="12" href="#12" data-line-number="12"><span class="fu">square</span>(<span class="dv">2</span>)</div></code></pre>
+</section>
+<section id="specialized-implementation" class="slide level1">
+<h1>Specialized implementation</h1>
+<pre class="sourceCode java"><code class="sourceCode java"><div class="sourceLine" id="1" href="#1" data-line-number="1"><span class="kw">public</span> <span class="dt">final</span> <span class="kw">class</span> Main$</div>
+<div class="sourceLine" id="2" href="#2" data-line-number="2">{</div>
+<div class="sourceLine" id="3" href="#3" data-line-number="3">    <span class="kw">public</span> <span class="dt">int</span> square$mIc$<span class="fu">sp</span>(<span class="dt">int</span> x, Main.<span class="fu">IsMultiplicable</span> impl)</div>
+<div class="sourceLine" id="4" href="#4" data-line-number="4">    {</div>
+<div class="sourceLine" id="5" href="#5" data-line-number="5">        <span class="kw">return</span> impl.<span class="fu">times</span>$mcI$<span class="fu">sp</span>(x, x);</div>
+<div class="sourceLine" id="6" href="#6" data-line-number="6">    }</div>
+<div class="sourceLine" id="7" href="#7" data-line-number="7"></div>
+<div class="sourceLine" id="8" href="#8" data-line-number="8">    <span class="kw">private</span> Main$()</div>
+<div class="sourceLine" id="9" href="#9" data-line-number="9">    {</div>
+<div class="sourceLine" id="10" href="#10" data-line-number="10">        MODULE$ = <span class="kw">this</span>;</div>
+<div class="sourceLine" id="11" href="#11" data-line-number="11">        square$mIc$<span class="fu">sp</span>(<span class="dv">2</span>, Main.<span class="fu">IntIsMultiplicable</span>..<span class="fu">MODULE</span>$);</div>
+<div class="sourceLine" id="12" href="#12" data-line-number="12">    }</div>
+<div class="sourceLine" id="13" href="#13" data-line-number="13"></div>
+<div class="sourceLine" id="14" href="#14" data-line-number="14">    <span class="kw">public</span> <span class="dt">static</span> Main$ MODULE$;</div>
+<div class="sourceLine" id="15" href="#15" data-line-number="15"></div>
+<div class="sourceLine" id="16" href="#16" data-line-number="16">    <span class="dt">static</span></div>
+<div class="sourceLine" id="17" href="#17" data-line-number="17">    {</div>
+<div class="sourceLine" id="18" href="#18" data-line-number="18">        <span class="kw">new</span> Main$();</div>
+<div class="sourceLine" id="19" href="#19" data-line-number="19">    }</div>
+<div class="sourceLine" id="20" href="#20" data-line-number="20">}</div></code></pre>
+</section>
+<section id="specialized-implementation-1" class="slide level1">
+<h1>Specialized implementation</h1>
+<pre class="sourceCode java"><code class="sourceCode java"><div class="sourceLine" id="1" href="#1" data-line-number="1"><span class="kw">public</span> <span class="dt">static</span> <span class="kw">class</span> Main$IntIsMultiplicable$</div>
+<div class="sourceLine" id="2" href="#2" data-line-number="2">    <span class="kw">implements</span> sp</div>
+<div class="sourceLine" id="3" href="#3" data-line-number="3">{</div>
+<div class="sourceLine" id="4" href="#4" data-line-number="4"></div>
+<div class="sourceLine" id="5" href="#5" data-line-number="5">    <span class="kw">public</span> <span class="dt">int</span> <span class="fu">times</span>(<span class="dt">int</span> a, <span class="dt">int</span> b)</div>
+<div class="sourceLine" id="6" href="#6" data-line-number="6">    {</div>
+<div class="sourceLine" id="7" href="#7" data-line-number="7">        <span class="kw">return</span> times$mcI$<span class="fu">sp</span>(a, b);</div>
+<div class="sourceLine" id="8" href="#8" data-line-number="8">    }</div>
+<div class="sourceLine" id="9" href="#9" data-line-number="9"></div>
+<div class="sourceLine" id="10" href="#10" data-line-number="10">    <span class="kw">public</span> <span class="dt">int</span> times$mcI$<span class="fu">sp</span>(<span class="dt">int</span> a, <span class="dt">int</span> b)</div>
+<div class="sourceLine" id="11" href="#11" data-line-number="11">    {</div>
+<div class="sourceLine" id="12" href="#12" data-line-number="12">        <span class="kw">return</span> a * b;</div>
+<div class="sourceLine" id="13" href="#13" data-line-number="13">    }</div>
+<div class="sourceLine" id="14" href="#14" data-line-number="14"></div>
+<div class="sourceLine" id="15" href="#15" data-line-number="15">}</div></code></pre>
+</section>
+<section id="nicer-syntax" class="slide level1">
+<h1>Nicer syntax</h1>
+<pre class="sourceCode scala"><code class="sourceCode scala"><div class="sourceLine" id="1" href="#1" data-line-number="1"><span class="kw">def</span> uglySquare[@specialized T](x: T)(<span class="kw">implicit</span> impl: IsMultiplicable[T]): T =</div>
+<div class="sourceLine" id="2" href="#2" data-line-number="2">  impl.<span class="fu">times</span>(x, x)</div>
+<div class="sourceLine" id="3" href="#3" data-line-number="3"></div>
+<div class="sourceLine" id="4" href="#4" data-line-number="4"><span class="kw">class</span> MultiplyOps[@specialized T](self: T)(<span class="kw">implicit</span> impl: IsMultiplicable[T]) {</div>
+<div class="sourceLine" id="5" href="#5" data-line-number="5">  <span class="kw">def</span> * (other: T): T = impl.<span class="fu">times</span>(self, other)</div>
+<div class="sourceLine" id="6" href="#6" data-line-number="6">}</div>
+<div class="sourceLine" id="7" href="#7" data-line-number="7"></div>
+<div class="sourceLine" id="8" href="#8" data-line-number="8"><span class="kw">implicit</span> <span class="kw">def</span> toMultiplyOps[@specialized T: IsMultiplicable](t: T): MultiplyOps[T] =</div>
+<div class="sourceLine" id="9" href="#9" data-line-number="9">  <span class="kw">new</span> <span class="fu">MultiplyOps</span>(t)</div>
+<div class="sourceLine" id="10" href="#10" data-line-number="10"></div>
+<div class="sourceLine" id="11" href="#11" data-line-number="11"><span class="kw">def</span> square[@specialized T: IsMultiplicable](x: T) = x * x</div></code></pre>
+</section>
+<section id="decompiling-again" class="slide level1">
+<h1>Decompiling again</h1>
+<pre class="sourceCode java"><code class="sourceCode java"><div class="sourceLine" id="1" href="#1" data-line-number="1"><span class="kw">public</span> <span class="dt">final</span> <span class="kw">class</span> Main$</div>
+<div class="sourceLine" id="2" href="#2" data-line-number="2">{</div>
+<div class="sourceLine" id="3" href="#3" data-line-number="3"></div>
+<div class="sourceLine" id="4" href="#4" data-line-number="4">    <span class="kw">public</span> <span class="dt">int</span> square$mIc$<span class="fu">sp</span>(<span class="dt">int</span> x, Main.<span class="fu">IsMultiplicable</span> evidence$<span class="dv">2</span>)</div>
+<div class="sourceLine" id="5" href="#5" data-line-number="5">    {</div>
+<div class="sourceLine" id="6" href="#6" data-line-number="6">        <span class="kw">return</span> toMultiplyOps$mIc$<span class="fu">sp</span>(x, evidence$<span class="dv">2</span>).$times$mcI$<span class="fu">sp</span>(x);</div>
+<div class="sourceLine" id="7" href="#7" data-line-number="7">    }</div>
+<div class="sourceLine" id="8" href="#8" data-line-number="8"></div>
+<div class="sourceLine" id="9" href="#9" data-line-number="9">}</div></code></pre>
+</section>
+<section id="back-to-spire" class="slide level1">
+<h1>Back to Spire</h1>
+<ul>
+<li>(Noting that Scala has a <code>Numeric[T]</code> typeclass)</li>
+<li>Spire implements a typeclass hiearchy based on mathematical definitions (Rings, Fields, etc.)</li>
+<li>Lots of good macros, lots of <code>@inline</code>-ing</li>
+<li>Definitions for vectorized operations on arrays, etc.</li>
+<li>Caveats: importing right implicits and syntax</li>
+</ul>
+</section>
+<section id="the-cfor-macro" class="slide level1">
+<h1>The <code>cfor</code> macro</h1>
+<pre class="sourceCode scala"><code class="sourceCode scala"><div class="sourceLine" id="1" href="#1" data-line-number="1"><span class="fu">cfor</span>(<span class="dv">0</span>)(_ &lt; <span class="dv">10</span>, _ + <span class="dv">1</span>) { i =&gt;</div>
+<div class="sourceLine" id="2" href="#2" data-line-number="2">  <span class="fu">println</span>(i)</div>
+<div class="sourceLine" id="3" href="#3" data-line-number="3">}</div></code></pre>
+<pre class="sourceCode scala"><code class="sourceCode scala"><div class="sourceLine" id="1" href="#1" data-line-number="1">  <span class="kw">def</span> cforMacro[A](c: Context)(init: c.<span class="fu">Expr</span>[A])</div>
+<div class="sourceLine" id="2" href="#2" data-line-number="2">     (test: c.<span class="fu">Expr</span>[A =&gt; Boolean], next: c.<span class="fu">Expr</span>[A =&gt; A])</div>
+<div class="sourceLine" id="3" href="#3" data-line-number="3">     (body: c.<span class="fu">Expr</span>[A =&gt; Unit]): c.<span class="fu">Expr</span>[Unit] = {</div>
+<div class="sourceLine" id="4" href="#4" data-line-number="4"></div>
+<div class="sourceLine" id="5" href="#5" data-line-number="5">    <span class="kw">import</span> c.<span class="fu">universe</span>._</div>
+<div class="sourceLine" id="6" href="#6" data-line-number="6">    <span class="kw">val</span> util = SyntaxUtil[c.<span class="fu">type</span>](c)</div>
+<div class="sourceLine" id="7" href="#7" data-line-number="7">    <span class="kw">val</span> index = util.<span class="fu">name</span>(<span class="st">&quot;index&quot;</span>)</div>
+<div class="sourceLine" id="8" href="#8" data-line-number="8"></div>
+<div class="sourceLine" id="9" href="#9" data-line-number="9">    <span class="kw">val</span> tree = <span class="kw">if</span> (util.<span class="fu">isClean</span>(test, next, body)) {</div>
+<div class="sourceLine" id="10" href="#10" data-line-number="10">      q<span class="st">&quot;&quot;&quot;</span></div>
+<div class="sourceLine" id="11" href="#11" data-line-number="11">      <span class="kw">var</span> $index = $init</div>
+<div class="sourceLine" id="12" href="#12" data-line-number="12">      <span class="kw">while</span> ($<span class="fu">test</span>($index)) {</div>
+<div class="sourceLine" id="13" href="#13" data-line-number="13">        $<span class="fu">body</span>($index)</div>
+<div class="sourceLine" id="14" href="#14" data-line-number="14">        $index = $<span class="fu">next</span>($index)</div>
+<div class="sourceLine" id="15" href="#15" data-line-number="15">      }</div>
+<div class="sourceLine" id="16" href="#16" data-line-number="16">      <span class="st">&quot;&quot;&quot;</span></div>
+<div class="sourceLine" id="17" href="#17" data-line-number="17"></div>
+<div class="sourceLine" id="18" href="#18" data-line-number="18">    } <span class="kw">else</span> {</div>
+<div class="sourceLine" id="19" href="#19" data-line-number="19">      ...</div>
+<div class="sourceLine" id="20" href="#20" data-line-number="20">    }</div>
+<div class="sourceLine" id="21" href="#21" data-line-number="21"></div>
+<div class="sourceLine" id="22" href="#22" data-line-number="22">    <span class="kw">new</span> InlineUtil[c.<span class="fu">type</span>](c).<span class="fu">inlineAndReset</span>[Unit](tree)</div>
+<div class="sourceLine" id="23" href="#23" data-line-number="23">  }</div></code></pre>
+</section>
+<section id="extending-to-your-own-types" class="slide level1">
+<h1>Extending to your own types</h1>
+<ul>
+<li>Define appropriate typeclasses, Spire gives syntax etc. for free</li>
+<li>Example: Define a Ring and VectorSpace for a square matrix</li>
+</ul>
+<pre><code>
+implicit def matrixIsRing[N &lt;: Int with Singleton : Witness.Aux, R : Field]: Ring[Matrix[N, R]] = new Ring[Matrix[N, R]] {
+
+  override def negate(x: Matrix[N, R]): Matrix[N, R] =
+    Matrix((i, j) =&gt; -x(i, j))
+
+  override def zero: Matrix[N, R] =
+    Matrix((i, j) =&gt; Field[R].zero)
+
+  override def plus(x: Matrix[N, R], y: Matrix[N, R]): Matrix[N, R] =
+    Matrix((i, j) =&gt; x(i, j) + y(i, j))
+
+  override def minus(x: Matrix[N, R], y: Matrix[N, R]): Matrix[N, R] =
+    Matrix((i, j) =&gt; x(i, j) - y(i, j))
+
+  override def one: Matrix[N, R] =
+    Matrix((i, j) =&gt; if (i == j) Field[R].one else Field[R].zero)
+
+  override def times(x: Matrix[N, R], y: Matrix[N, R]): Matrix[N, R] =
+    Matrix((i, j) =&gt; x.rows(i) dot y.columns(j))
+
+}
+
+implicit def matrixIsVectorSpace[N &lt;: Int with Singleton : Witness.Aux, R](implicit f: Field[R]): VectorSpace[Matrix[N, R], R] = new VectorSpace[Matrix[N, R], R] {
+
+  override def scalar: Field[R] = f
+
+  override def timesl(r: R, v: Matrix[N, R]): Matrix[N, R] =
+    Matrix[N, R]((i: Int, j: Int) =&gt; r * v(i, j))
+
+  override def divr(v: Matrix[N, R], r: R): Matrix[N, R] =
+    Matrix[N, R]((i: Int, j: Int) =&gt; v(i, j) / r)
+
+  override def negate(x: Matrix[N, R]): Matrix[N, R] =
+    Ring[Matrix[N, R]].negate(x)
+
+  override def zero: Matrix[N, R] =
+    Ring[Matrix[N, R]].zero
+
+  override def plus(x: Matrix[N, R], y: Matrix[N, R]): Matrix[N, R] =
+    Ring[Matrix[N, R]].plus(x, y)
+
+  override def minus(x: Matrix[N, R], y: Matrix[N, R]): Matrix[N, R] =
+    Ring[Matrix[N, R]].minus(x, y)
+
+}
+</code></pre>
+</section>
+<section id="use-case-automatic-differentiation" class="slide level1">
+<h1>Use case: automatic differentiation</h1>
+</section>
+<section id="dual-numbers" class="slide level1">
+<h1>Dual numbers</h1>
+<ul>
+<li>Define <span class="math inline">\(\epsilon\)</span> such that <span class="math inline">\(\epsilon^2 = 0\)</span></li>
+<li>(Similar to imaginary number <span class="math inline">\(i^2 = -1\)</span>)</li>
+<li><span class="math inline">\(z = a + b\epsilon\)</span> is a dual number</li>
+<li>Special property that <span class="math display">\[f(x + \epsilon) = f(x) + f&#39;(x)\epsilon\]</span></li>
+<li>Spire implements these as <code>Jet</code></li>
+</ul>
+</section>
+<section id="ad-in-spire" class="slide level1">
+<h1>AD in Spire</h1>
+<pre class="sourceCode scala"><code class="sourceCode scala"><div class="sourceLine" id="1" href="#1" data-line-number="1"><span class="kw">import</span> spire.<span class="fu">implicits</span>._</div>
+<div class="sourceLine" id="2" href="#2" data-line-number="2"><span class="kw">import</span> spire.<span class="fu">algebra</span>.<span class="fu">Ring</span></div>
+<div class="sourceLine" id="3" href="#3" data-line-number="3"><span class="kw">import</span> spire.<span class="fu">math</span>.{Jet, JetDim}</div>
+<div class="sourceLine" id="4" href="#4" data-line-number="4"><span class="kw">implicit</span> <span class="kw">val</span> jd = <span class="fu">JetDim</span>(<span class="dv">1</span>)</div>
+<div class="sourceLine" id="5" href="#5" data-line-number="5"><span class="kw">def</span> square[T : Ring](x: T) = x * x</div>
+<div class="sourceLine" id="6" href="#6" data-line-number="6"><span class="fu">square</span>(<span class="fu">Jet</span>(<span class="fl">2.0</span>, <span class="dv">0</span>)) <span class="co">// (4.0 + [4.0]h)</span></div></code></pre>
+</section>
+<section id="concluding-thoughts" class="slide level1">
+<h1>Concluding thoughts</h1>
+<ul>
+<li>If you use numbers or love math Spire is fun to work with</li>
+<li>I think it makes great reading material</li>
+<li>Use more typeclasses</li>
+<li>Spire demonstrates typeclasses that are performant and practical</li>
+<li>Questions?</li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0//lib/js/head.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0//js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0//plugin/zoom-js/zoom.js', async: true },
+          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0//plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
