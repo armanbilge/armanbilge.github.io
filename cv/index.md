@@ -12,28 +12,17 @@ custom-head: |
   </style>
 ---
 
-# Curriculum Vitae <a href="//latexonline.cc/compile?git=https://github.com/armanbilge/cv&command=xelatex&target=cv.tex&download=armanbilge_cv.pdf"><span style="font-size: 24px" class="mega-octicon octicon-file-pdf">
-
-## Education
-
-<span class="left">**Ph.D. in Statistics**</span>
-<span class="right">**_University of Washington_**</span><br/>
-<span class="left">September 2016–Present</span>
-<span class="right">Seattle, Washington</span><br/>
-
-<span class="left">**B.Sc. in Computer Science and Mathematics**</span>
-<span class="right">**_The University of Auckland_**</span><br/>
-<span class="left">March 2014–November 2016</span>
-<span class="right">Auckland, New Zealand</span><br/>
-
----
+# Curriculum Vitae
 
 ## Research Experience
+
+<span class="left">**Independent Researcher**</span>
+<span class="right">January 2018–Present</span><br/>
 
 <span class="left">**Research Assistant**</span>
 <span class="right">**_Fred Hutchinson Cancer Research Center_**</span><br/>
 <span class="left">[Matsen Group](//matsen.group)</span>
-<span class="right">September 2016–Present</span><br/>
+<span class="right">September 2016–December 2017</span><br/>
 
 <span class="left">**Undergraduate Researcher**</span>
 <span class="right">**_The University of Auckland_**</span><br/>
@@ -47,6 +36,20 @@ custom-head: |
 
 ---
 
+## Education
+
+<span class="left">**Incomplete Ph.D. in Statistics**</span>
+<span class="right">**_University of Washington_**</span><br/>
+<span class="left">September 2016–December 2017</span>
+<span class="right">Seattle, Washington</span><br/>
+
+<span class="left">**B.Sc. in Computer Science and Mathematics**</span>
+<span class="right">**_The University of Auckland_**</span><br/>
+<span class="left">March 2014–November 2016</span>
+<span class="right">Auckland, New Zealand</span><br/>
+
+---
+
 ## Teaching Experience
 
 <span class="left">**Teaching Assistant**</span>
@@ -56,7 +59,9 @@ custom-head: |
 
 ---
 
-## Publications
+## Publications <a href="https://scholar.google.com/citations?user=FsQFBL8AAAAJ"><span style="font-size: 24px" class="mega-octicon octicon-mortar-board">
+
+AE Seglias, E Williams, **AB**, AT Kramer (2018). Phylogeny and source climate impact seed dormancy and germination of restoration-relevant forb species. *PLOS ONE*. [doi:10.1371/journal.pone.0191931](https://doi.org/10.1371/journal.pone.0191931)
 
 V Dinh,\* **AB**,\* C Zhang,\* FA Matsen (2017). Probabilistic Path Hamiltonian Monte Carlo. *34<sup>th</sup> International Conference on Machine Learning*. [arXiv:1702.07814](//arxiv.org/abs/1702.07814)
 
