@@ -59,7 +59,7 @@ custom-head: |
 
 ---
 
-## Publications <a href="https://scholar.google.com/citations?user=FsQFBL8AAAAJ"><span style="font-size: 24px" class="mega-octicon octicon-mortar-board">
+## Publications <a href="https://scholar.google.com/citations?user=FsQFBL8AAAAJ"><span style="font-size: 24px" class="mega-octicon octicon-mortar-board"></span></a>
 
 AE Seglias, E Williams, **AB**, AT Kramer (2018). Phylogeny and source climate impact seed dormancy and germination of restoration-relevant forb species. *PLOS ONE*. [doi:10.1371/journal.pone.0191931](https://doi.org/10.1371/journal.pone.0191931)
 
