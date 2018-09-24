@@ -38,7 +38,7 @@ custom-head: |
 
 ## Education
 
-<span class="left">**Incomplete Ph.D. in Statistics**</span>
+<span class="left">**Unfinished Ph.D. in Statistics**</span>
 <span class="right">**_University of Washington_**</span><br/>
 <span class="left">September 2016–December 2017</span>
 <span class="right">Seattle, Washington</span><br/>
@@ -61,7 +61,7 @@ custom-head: |
 
 ## Publications <a href="https://scholar.google.com/citations?user=FsQFBL8AAAAJ"><span style="font-size: 24px" class="mega-octicon octicon-mortar-board"></span></a>
 
-AE Seglias, E Williams, **AB**, AT Kramer (2018). Phylogeny and source climate impact seed dormancy and germination of restoration-relevant forb species. *PLOS ONE*. [doi:10.1371/journal.pone.0191931](https://doi.org/10.1371/journal.pone.0191931)
+AE Seglias, E Williams, **AB**, AT Kramer (2018). Phylogeny and source climate impact seed dormancy and germination of restoration-relevant forb species. *PLoS ONE*. [doi:10.1371/journal.pone.0191931](https://doi.org/10.1371/journal.pone.0191931)
 
 V Dinh,\* **AB**,\* C Zhang,\* FA Matsen (2017). Probabilistic Path Hamiltonian Monte Carlo. *34<sup>th</sup> International Conference on Machine Learning*. [arXiv:1702.07814](//arxiv.org/abs/1702.07814)
 
@@ -69,8 +69,10 @@ V Dinh,\* **AB**,\* C Zhang,\* FA Matsen (2017). Probabilistic Path Hamiltonian 
 
 ---
 
-## Conference Presentations
+## Presentations
 
+<span class="left">**Scala at the Sea**, Seattle ([slides](/talks/sats18/))</span>
+<span class="right">January 2018</span><br/>
 <span class="left">**Evolution**, Portland ([poster](//doi.org/10.5281/zenodo.814272))</span>
 <span class="right">June 2017</span><br/>
 <span class="left">**SMBE Annual Meeting**, Gold Coast ([poster](//doi.org/10.5281/zenodo.56495))</span>
