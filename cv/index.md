@@ -61,6 +61,8 @@ custom-head: |
 
 ## Publications <a href="https://scholar.google.com/citations?user=FsQFBL8AAAAJ"><span style="font-size: 24px" class="mega-octicon octicon-mortar-board"></span></a>
 
+M Fourment, AF Magee, C Whidden, **AB**, FA Matsen, VN Minin (2018). 19 dubious ways to compute the marginal likelihood of a phylogenetic tree topology. _Submitted._ [arXiv:1811.11804](//arxiv.org/abs/1811.11804)
+
 AE Seglias, E Williams, **AB**, AT Kramer (2018). Phylogeny and source climate impact seed dormancy and germination of restoration-relevant forb species. *PLoS ONE*. [doi:10.1371/journal.pone.0191931](https://doi.org/10.1371/journal.pone.0191931)
 
 V Dinh,\* **AB**,\* C Zhang,\* FA Matsen (2017). Probabilistic Path Hamiltonian Monte Carlo. *34<sup>th</sup> International Conference on Machine Learning*. [arXiv:1702.07814](//arxiv.org/abs/1702.07814)
